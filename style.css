@@ -1,0 +1,50 @@
+
+*{
+padding: 0;
+margin: 0;
+}
+
+.container > div {
+    text-align:  center;
+    border:  2px solid black;  
+}
+
+.container{
+    width: 100%;
+    display: grid;
+    grid-template: 5vh 10vh 5vh 75vh 5vh / 15% 70% 15%  ;
+    grid-template-areas:
+    "B B B"
+    "G E J"
+    "G H J"
+    "G L J"
+    "O O O";
+}
+
+.cell1{ background-color: aliceblue;    grid-area: A;}
+.cell2{background-color: gold;  grid-area: B;}
+.cell3{background-color: aqua;          grid-area: C;}
+.cell4{background-color: aquamarine;    grid-area: D;}
+.cell5{background-color: azure;         grid-area: E;
+display: grid; grid-template: 100% / 20% 60% 20%; grid-template-areas:"NL NM NR";}
+    .cell5_1{background-color: aqua; grid-area: NL;}
+    .cell5_2{background-color: burlywood; grid-area: NM}
+    .cell5_3{background-color: violet; grid-area: NR ; display: grid;  grid-template: 50% 50% / 50% 50%; grid-template-areas:
+         "NR2 NR2"
+         "NR3 NR4";}
+        .cell5_3_1{ background-color: khaki; grid-area: NR1 }
+        .cell5_3_2{ background-color: chocolate; grid-area: NR2 }
+        .cell5_3_3{ background-color: darkgoldenrod; grid-area: NR3 }
+        .cell5_3_4{ background-color: green; grid-area: NR4 }
+.cell6{background-color: beige;         grid-area: F;}
+.cell7{background-color: bisque;        grid-area: G;}
+.cell8{background-color: grey;          grid-area: H;}
+.cell9{background-color: blue;          grid-area: J;}
+.cell10{background-color: blueviolet;   grid-area: K;}
+.cell11{background-color: brown;        grid-area: L;}
+.cell12{background-color: burlywood;    grid-area: M;}
+.cell13{background-color: chartreuse;   grid-area: N;}
+.cell14{background-color: goldenrod;    grid-area: O;}
+.cell15{background-color: cornflowerblue; grid-area: P;}
+
+
